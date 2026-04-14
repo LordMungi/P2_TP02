@@ -11,15 +11,14 @@ string::string(const char* text)
 	}
 }
 
-const char* string::toCharArray()
+char* string::toCharArray()
 {
-	const char* output = new const char[text.size()];
+	char* output = new char[text.size()];
 	int i = 0;
 
 	for (char c : text)
 	{		
-		output[i] = static_cast<const char>(c);
-		std::cout << c;
+		output[i] = c;
 		i++;
 	}
 
@@ -32,4 +31,5 @@ void string::print()
 	{
 		std::cout << c;
 	}
+	std::cout << std::endl;
 }

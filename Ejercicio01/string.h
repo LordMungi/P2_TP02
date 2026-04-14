@@ -11,7 +11,7 @@ public:
 
 	string(const char* text);
 	
-	const char* toCharArray();
+	char* toCharArray();
 	void print();
 };
 
